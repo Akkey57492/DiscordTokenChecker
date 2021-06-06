@@ -17,6 +17,6 @@ for token in tokens:
     Headers = {"authorization": f"{result}"}
     Check = requests.get("https://discordapp.com/api/v6/auth/login", headers=Headers)
     if Check.status_code == 200:
-        print(f"ValidToken {result}")
+        print(f"ValidToken: {result}")
     else:
-        print(f"InvalidToken {result}")
+        print(f"InvalidToken: {result}")
